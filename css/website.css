@@ -1,0 +1,525 @@
+        /* 修改浏览器默认样式 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #head{
+            position: relative;
+        }
+        /* logo后面的背景 */
+        .background{
+            background-color: #105FA5;
+            height: 162px;
+            position: relative;
+        }
+        .logo{
+            position: absolute;
+            top: 10px;
+            left: 60px;
+        }
+        .fengexian{
+            height: 5px;
+            background-color: #D6BD88;
+        }
+        /* 轮播图 */
+        #banner{
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            /* align-items: center;  */
+        }
+        .banner{
+            position: absolute;
+            width: 1650px;
+            height: 650px;
+            height: auto;
+            max-width: 100%;
+        }
+        .content1{
+            display: flex;
+            position: absolute;
+            background: linear-gradient(to bottom, #87cfeb3b 10%, white 90%); /* 垂直方向渐变，从上到下 */
+            height: 402px;
+            width: 100%; /* 设置宽度为100% */
+            top: 647px;
+        }
+        .content2{
+            position: absolute;
+            background: linear-gradient(to bottom, #87cfeb3b 10%, white 90%); /* 垂直方向渐变，从上到下 */
+            height: 366px;
+            width: 100%; /* 设置宽度为100% */
+            top: 1080px;
+        }
+        .content3{
+            position: absolute;
+            background: linear-gradient(to bottom, #87cfeb3b 10%, white 90%); /* 垂直方向渐变，从上到下 */
+            height: 900px;
+            width: 1216px;
+            top: 1415px;
+            margin-top: 50px;
+        }
+        /* 最下面的一块 */
+        .foot{
+            position: absolute;
+            background-color: #105FA5;
+            width: 100%; /* 设置宽度为100% 否则只是内容撑开的宽度*/
+            height: 231px;
+            top: 2255px;
+        }
+
+        .search-container{
+            position: absolute;
+            top: 45px;
+            right: 120px;
+        }
+        .search-box{
+            display: flex;
+            position: relative;
+        }
+        .search-button{
+            cursor: pointer;
+        }
+        .search-box input{
+            color: #A0BFDB;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.642);
+            padding: 5px;
+        }
+        input:focus {
+            outline: none; /* 去掉点击时的轮廓线 */
+            box-shadow: none; /* 去掉点击时的阴影效果 */
+        }        
+        .search-box input::placeholder{
+            color: #7A9CBB;
+        }
+        .old{
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            color: white;
+            font-size: smaller;
+        }
+        .navbox{
+            display: flex;
+            position: absolute;
+            bottom: 5px;
+            left: 50px;
+            z-index: 2;
+            border-top: solid 1px rgba(255, 255, 255, 0.301);
+        }
+        .nav{
+            display: flex; /* 将 ul 设置为 Flex 容器 */
+            position: relative;
+            list-style: none; /* 移除列表项的默认样式 */
+            padding: 0;
+        }
+        .nav li{
+            color: white;
+            margin: 0 10px;
+            padding: 12px 10px; /* 设置列表项的内边距 */
+            background-color: #105FA5;
+        }
+        /* 轮播图 */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+        }
+
+        .slides img {
+            width: 100%;
+            display: block;
+        }
+        /* 分成三份 */
+        .left {
+            flex: 1;
+        }
+        .middle {
+            flex: 1;
+        }
+        .right {
+            position: relative;
+            flex: 1;
+        }
+
+        .slide img{
+            margin: 20px 20px 0 20px;
+            width: 380px;
+            height: 301px;
+        }
+        .content1 .text1{
+            display: inline-block; /* 内容撑开div的面积 */
+            background-color: #BEDCF6;
+            color: #105FA5;
+            padding: 5px 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .content1 .text2{
+            cursor: pointer;
+            position: relative;
+            bottom: 5px;
+            color: #105FA5;
+            background-color: #BEDCF6;
+            margin: 0 20px 0 20px;
+            padding: 6px 20px;
+        }
+        .more1{
+            cursor: pointer;
+            display: inline-block; /* 内容撑开p的面积 */
+            color: #3b3b3b7c;
+            padding: 5px 0;
+            margin-left: 320px;
+            margin-top: 20px;
+        }
+        .more2{
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-block; /* 内容撑开p的面积 */
+            color: #3b3b3b7c;
+            padding: 5px 0;
+        }
+        .content1 .text3{
+            display: inline-block; /* 内容撑开div的面积 */
+            background-color: #BEDCF6;
+            color: #105FA5;
+            padding: 5px 20px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .middle .passage1 hr{
+            border: none;
+            border-top: 1px solid #ccc; /* 设置分割线的颜色和样式 */
+            margin: 20px 20px 15px 0; /* 设置分割线的上下间距 */
+        }
+        .content1 .passage1{
+            margin-top: 20px;
+        }
+        .content1 .passage1 h4{
+            cursor: pointer;
+        }
+        .content1 .passage1 p{
+            cursor: pointer;
+            font-family: "宋体", SimSun, sans-serif;
+            margin-bottom: 20px; /* 设置下方外边距为 20px，即每个 <p> 标签之间的距离 */
+            font-size: 15px;
+        }
+        .special{
+            font-size: small !important;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 10px; 
+            color: #7A7A7A;
+        }
+        .container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 330px; /* 设置容器高度 */
+        }
+        .section {
+            position: relative;
+            flex: 1; /* 让每个部分平均占据剩余空间 */
+        }
+        .day{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: white;
+            width: 70px;
+            height: 50px;
+            background-color: #004891;
+        }
+        .year{
+            margin-top: 3px;
+            display: flex;
+            justify-content: center;
+            font-size: 13px;
+            color: #7A7A7A;
+            width: 70px;
+            height: 40px;
+            background-color: #E6E6E6;
+            align-items: center
+        }
+        .passage2{
+            cursor: pointer;
+            position: absolute;
+            padding: 20px;
+            top: 5px;
+            left: 90px;
+            line-height: 1.8; /* 设置行高为1.5，可以根据需要调整 */
+        }
+        .content2 {
+            display: flex;
+        }
+
+        .content2 > div {
+            flex: 1; /* 让每个子元素占据相等的空间 */
+            height: 334px; /* 设置盒子高度 */
+        }
+        .content2 .text1{
+            display: inline-block; /* 内容撑开div的面积 */
+            background-color: #BEDCF6;
+            color: #105FA5;
+            padding: 5px 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .content2 .text2{
+            display: inline-block; /* 内容撑开div的面积 */
+            background-color: #BEDCF6;
+            color: #105FA5;
+            padding: 5px 20px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .content2 .text3{
+            display: inline-block; /* 内容撑开div的面积 */
+            background-color: #BEDCF6;
+            color: #105FA5;
+            padding: 5px 20px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        .content2 .passage1{
+            cursor: pointer;
+            font-size: x-small;
+            display: inline-block;
+            margin-left: 20px;
+            width: 288px;
+        }
+        .content2 .passage1 p{
+            margin-top: 22px; /* 设置下方外边距为 20px，即每个 <p> 标签之间的距离 */
+        }
+        .content2 .date{
+            color: #9CA6A9;
+            font-size: x-small;
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 50px;
+        }
+        .date p{
+            margin-top: 22px; /* 设置下方外边距为 20px，即每个 <p> 标签之间的距离 */
+        }
+        .left2{
+            position: relative;
+        }
+        .middle2{
+            position: relative;
+        }
+        .right2{
+            position: relative;
+        }
+        .more{
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-block; /* 内容撑开p的面积 */
+            color: #3b3b3b7c;
+            padding: 5px 0;
+        }
+
+        .content3 .text{
+            display: inline-block; /* 内容撑开div的面积 */
+            background-color: #BEDCF6;
+            color: #105FA5;
+            padding: 5px 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .content3 hr{
+            border-top: 1px solid #ccc; /* 设置分割线的颜色和样式 */
+            margin: 0 20px; /* 设置分割线的上下间距 */
+        }
+
+        .photo-container {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        
+        .photo-container img {
+            margin: 0 20px;
+            width: 25%; /* 每张照片占据容器的 25% 宽度 */
+            height: 200px; /* 自适应高度 */
+        }
+
+        .introduce div{
+            cursor: pointer;
+            color: #000000a1;
+            border: solid 1px #BEDCF6 ;
+            display: inline-block;
+            background-color: #EBF1F5;
+            width: 360px;
+            height: 40px;
+            margin: 30px 20px ;
+            text-align: center; /* 文本水平居中 */
+            padding-top: 20px;
+        }
+        .container{
+            margin: 30px 20px 30 0;
+        }
+        .resourse {
+            display: flex;
+            justify-content: space-between; /* 项目之间均匀分布 */
+            width: 100%;
+            height: 80px;
+            margin-top: 20px;
+        }
+        
+        .item {
+            cursor: pointer;
+            flex: 1; /* 弹性增长因子，使每个项目平均占据可用空间 */
+            text-align: center;
+            /* border: 1px solid black; 可选：添加边框以显示各块边界 */
+            margin-left: 20px;
+            text-align: center; /* 文本水平居中 */
+            padding-top: 30px;
+        }
+        
+        .footnav{
+            display: flex;
+            position: absolute;
+            bottom: 140px;
+            left: 70px;
+            z-index: 2;
+            border-bottom: solid 1px rgba(255, 255, 255, 0.301);
+        }
+        .foot .nav{
+            display: flex; /* 将 ul 设置为 Flex 容器 */
+            position: relative;
+            list-style: none; /* 移除列表项的默认样式 */
+            padding: 0;
+        }
+        .foot .nav li:first-child {
+            /* 在这里添加您想要应用的样式 */
+            font-weight: bold; /* 设置粗体文本 */
+            color: white; /* 设置文本颜色为红色 */
+        }        
+        .foot .nav li{
+            cursor: pointer;
+            font-size: small;
+            color: white;
+            margin: 0 10px;
+            padding: 12px 10px 30px; /* 设置列表项的内边距 */
+            background-color: #105FA5;
+        }
+        .last{
+            position: absolute;
+            color: rgba(255, 255, 255, 0.596);
+            bottom: 40px;
+            left: 400px;
+            text-align: center; /* 如果内容需要居中显示，也可以设置文本居中 */
+        }
+
+        .QRcode {
+            display: flex;
+            width: 200px;
+        }
+        .QRcode1 {
+            position: absolute;
+            right: 130px;
+            bottom: 10px;
+            text-align: center;
+            margin: 10px; /* 可根据需要调整间距 */
+        }
+        .QRcode2 {
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+            text-align: center;
+            margin: 10px; /* 可根据需要调整间距 */
+        }
+        
+        .QRcode img {
+            width: 80px;
+            max-width: 100%; /* 图片宽度最大为容器宽度 */
+        }
+        
+        .QRcode p {
+            color: white;
+            font-size: small;
+            margin-top: 5px; /* 文字与图片的间距 */
+        }
+        .nav-item{
+            cursor: pointer;
+        }
+        .xiala {
+            display: none; /* 默认隐藏下拉菜单 */
+        }
+        .nav-item.parent:hover .xiala {
+            display: block; /* 当悬停在具有 .parent 类的导航项上时，显示下拉菜单 */
+        }
+        .nav-item parent{
+            position: relative;
+        }
+        .xiala li{
+            padding: 5px 10px;
+            text-align: center;
+            list-style-type: none;
+            background-color: white;
+            color: black;
+        }
+        .xiala {
+            display: none;
+            position: absolute;
+        }
+        .xiala.xiala-1 {
+            top: 44px;
+            left: 72px;
+        }
+        .xiala.xiala-2 {
+            top: 44px;
+            left: 176px;
+        }
+        .xiala.xiala-3 {
+            top: 44px;
+            left: 280px;
+        }
+        .xiala.xiala-4 {
+            top: 44px;
+            left: 384px;
+        }
+        .xiala.xiala-5 {
+            top: 44px;
+            left: 488px;
+        }
+        .xiala.xiala-6 {
+            top: 44px;
+            left: 592px;
+        }
+        .xiala.xiala-7 {
+            top: 44px;
+            left: 696px;
+        }
+        .xiala.xiala-8 {
+            top: 44px;
+            left: 800px;
+        }
+        .xiala.xiala-9 {
+            top: 44px;
+            left: 904px;
+        }
+        .xiala.xiala-10 {
+            top: 44px;
+            left: 1008px;
+        }
+        
+        /* 依此类推，为每个下拉菜单设置不同的位置 */
+        
+        
+        
+ 
+        
+        
+
