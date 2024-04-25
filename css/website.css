@@ -517,7 +517,32 @@
         
         /* 依此类推，为每个下拉菜单设置不同的位置 */
         
+        .prev, .next {
+            cursor: pointer;
+            font-size: 40px; /* 调整箭头更大 */
+            color: #A09F9E; /* 箭头颜色 */
+            background-color: rgba(0, 0, 0, 0.5); /* 背景颜色和透明度 */
+            padding: 15px; /* 内边距 */
+            border-radius: 10%; 
+            position: absolute; /* 绝对定位 */
+            top: 50%; /* 顶部位置 */
+            transform: translateY(-50%); /* 垂直居中 */
+            z-index: 1; /* 确保箭头在轮播图上方 */
+            font-weight: 100; /* 字体更细 */
+            user-select: none; /* 防止被选中 */
+            display: none; /* 初始隐藏箭头 */
+        }
+        .slideshow-container:hover .prev, .slideshow-container:hover .next {
+            display: block; /* 鼠标停留在照片上时显示箭头 */
+        }
         
+        .prev {
+            left: 0;
+        }
+        
+        .next {
+            right: 0;
+        }
         
  
         
